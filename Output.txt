@@ -1,0 +1,77 @@
+Output records for 2 
+Detection time by 1 = 0:00:08.591321
+Output records for 2 
+Detection time by 3 = 0:00:15.691036
+Recovery time by 1 = 0:00:20.083152
+Recovery time by 3 = 0:00:28.068628
+Self Recovery time = 0:00:37.604362
+Output records for 3 
+Detection time by 2 = 0:00:11.016966
+Output records for 3 
+Detection time by 1 = 0:00:15.005451
+Output records for 3 
+Detection time by 4 = 0:00:22.114657
+Self Recovery time = 0:00:36.162850
+Recovery time by 2 = 0:00:50.121742
+Recovery time by 1 = 0:00:50.160666
+Recovery time by 4 = 0:00:48.083251
+Output records for 3 
+Detection time by 1 = 0:00:15.897655
+Output records for 3 
+Detection time by 6 = 0:00:15.861750
+Output records for 3 
+Detection time by 4 = 0:00:15.852787
+Output records for 3 
+Detection time by 10 = 0:00:22.288334
+Output records for 3 
+Detection time by 8 = 0:00:15.819264
+Output records for 3 
+Detection time by 2 = 0:00:15.798320
+Output records for 3 
+Detection time by 5 = 0:00:08.417464
+Output records for 3 
+Detection time by 9 = 0:00:08.418461
+Output records for 3 
+Detection time by 7 = 0:00:08.396528
+Recovery time by 5 = 0:00:16.053118
+Recovery time by 9 = 0:00:16.044071
+Recovery time by 4 = 0:00:14.050278
+Recovery time by 1 = 0:00:14.058271
+Recovery time by 8 = 0:00:14.054281
+Recovery time by 7 = 0:00:14.043311
+Recovery time by 2 = 0:00:14.039322
+Recovery time by 6 = 0:00:12.053206
+Recovery time by 10 = 0:00:08.044088
+Self Recovery time = 0:00:36.254542
+Output records for 20 
+Detection time by 17 = 0:00:14.416638
+Output records for 20 
+Detection time by 18 = 0:00:14.399685
+Output records for 20 
+Detection time by 19 = 0:00:20.993978
+Recovery time by 19 = 0:00:24.039406
+Recovery time by 17 = 0:00:24.041397
+Recovery time by 18 = 0:00:24.037415
+Self Recovery time = 0:00:37.346728
+Output records for 7 
+Detection time by 9 = 0:00:18.590248
+Self Recovery time = 0:00:37.370421
+Recovery time by 9 = 0:00:50.300070
+Output records for 3 
+Detection time by 2 = 0:00:14.518773
+Output records for 3 
+Detection time by 1 = 0:00:14.503882
+Output records for 3 
+Detection time by 4 = 0:00:20.876957
+Output records for 3 
+Detection time by 2 = 0:00:17.902470
+Output records for 3 
+Detection time by 1 = 0:00:17.872190
+Output records for 3 
+Detection time by 4 = 0:00:24.952253
+Recovery time by 2 = 0:00:14.026909
+Recovery time by 1 = 0:00:16.019584
+Recovery time by 4 = 0:00:12.023434
+Self Recovery time = 0:00:36.417097
+Output records for 3 
+Detection time by 1 = 0:02:01.049059
