@@ -8,6 +8,7 @@ import linecache
 import operator
 import tkinter
 import datetime
+# import in_place
 
 from pubsub import Pub, Sub
 from radio import Radio
@@ -189,39 +190,20 @@ class Vertex():
                         # detection_time = datetime.datetime.now() - fail_detect_start
                         failed_node = self.neighbourhood[1]
                         print(f'Failed id: {failed_node}')
-                        # top = tkinter.Tk()  
-                        # top.withdraw()
-                        # messagebox.showinfo(f'Detection_time by {self.neighbourhood[0]}',detection_time) 
-                        # top.quit()
                         self.node_failure.set()
                         single_temp.clear()
-                        # detection_time = datetime.datetime.now() - fail_detect_start
-                        # top = tkinter.Tk()  
-                        # top.withdraw()
-                        # messagebox.showinfo(f'Detection_time by {self.neighbourhood[0]}',detection_time) 
-                        # top.quit()
                 elif len(self.heartbeat_sense_buff.keys()) > 1 and not self.node_failure.is_set():
                     min_id, min_val = min(self.heartbeat_sense_buff.items(), key = lambda x: x[1])
                     max_id, max_val = max(self.heartbeat_sense_buff.items(), key = lambda x: x[1])
                     print(f'From failure detection : {self.heartbeat_sense_buff} -> {min_val}, {max_val}')
                     if (max_val - min_val) > 1:
-                        # top = tkinter.Tk()  
-                        # top.withdraw()
-                        # detection_time = datetime.datetime.now() - fail_detect_start
-                        # messagebox.showinfo(f'Detection time by->{self.neighbourhood[0]}',detection_time) 
-                        # top.quit()
                         print(f'Failed id: {min_id}')
                         failed_node = min_id
                         self.node_failure.set()
-                        # top = tkinter.Tk()  
-                        # top.withdraw()
-                        # detection_time = datetime.datetime.now() - fail_detect_start
-                        # messagebox.showinfo(f'Detection time by->{self.neighbourhood[0]}',detection_time) 
-                        # top.quit()
                 if failed_node is not None and self.node_failure.is_set():
-                    with open('process_ids.txt') as file:
+                    with open('kill_log.txt') as file:
                         for line in file:
-                            if f'{failed_node}kill_time' in line:
+                            if f'{failed_node}kill_time' in line and line.strip() != "":
                                 line_info_list = line.split('=')
                                 node_id = line_info_list[0]
                                 fail_detect_start = line_info_list[1]

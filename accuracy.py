@@ -2,6 +2,7 @@ import itertools
 import os
 import sys
 import shutil
+import in_place
 
 Name_of_node = sys.argv[1]
 Compare_with = "copy" 
@@ -24,6 +25,17 @@ accuracy = ((total - count)/total)*100
 print('accuracy rate-----> ', round(accuracy,4))
 record = open('Output.txt', 'a+')
 record.write(f'Accuracy Rate of recovery = {accuracy}')
-record.write('------------------------------------------------------------\n')
+record.write('\n------------------------------------------------------------\n')
 record.close()
 shutil.rmtree('copy')
+with open('kill_log.txt') as f:
+    for line in f:
+        if f'{Name_of_node}kill_time' in line:
+            line_info_list = line.split('=')
+            node_id = line_info_list[0]
+            fail_detect_start = line_info_list[1]
+with in_place.InPlace('kill_log.txt')as file:
+    for line in file:
+        line = line.replace(f'{Name_of_node}kill_time={fail_detect_start}', '')
+        file.write(line)
+
