@@ -5,7 +5,7 @@ To Execute the total system follow the order given below:
 
 Run all the nodes in a dataset:
 ------------------------------
-1:- Save the project in your computer.
+1:- Save the programs in src folder in any location of your computer.
 2:- Open the terminal(ex: powershell) and change the default execution path to the path where the project is stored.
     (ex: cd D:\Dhiman\viii_sem\project\dsg_single_faliure_recovery\src)
 3:- Now run the controller.py with with any csv file as argv input
